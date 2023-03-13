@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/069e3b853d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <main class="w-10/12 mx-auto">
+    <section>
+      <div class="navbar bg-base-300 rounded-xl">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </label>
+            <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+              <div class="card-body">
+                <span class="font-bold text-lg">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="OIP (1).jpg" />
+              </div>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr class="mt-3">
+
+      <div id="news-title" class="flex justify-between">
+
+      </div>
+
+
+
+    </section>
+
+    <section class="">
+      <div class="alert shadow-lg mt-10 rounded-md">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            class="stroke-info flex-shrink-0 w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span><span id="alert-number">00</span> unread messages. Tap to see <span id="alert-title"></span></span>
+        </div>
+      </div>
+      <div class="flex items-center justify-between mt-8">
+        <div class="flex items-center gap-2">
+          <h2>Sort by:</h2>
+          <select class="select select-primary w-full max-w-xs">
+            <option disabled selected>What is the best TV show?</option>
+            <option>Game of Thrones</option>
+            <option>Lost</option>
+            <option>Breaking Bad</option>
+            <option>Walking Dead</option>
+          </select>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="showTodaysPick()">TodaysPick</button>
+          <button class="btn btn-outline btn-primary" onclick="showTrending()">Trending</button>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="news-pag" class="mt-12">
+
+    </section>
+
+    <section>
+      <!-- The button to open modal -->
+      
+
+      <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+      <div id="modal-div" class="modal modal-bottom sm:modal-middle">
+        <!-- <div class="modal-box">
+          <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
+          <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!
+          </p>
+          <div class="modal-action">
+            <label for="my-modal-6" class="btn">Yay!</label>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/news.js"></script>
+</body>
+
+</html>
